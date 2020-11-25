@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The driveIn cinema</title>
+        <link rel="stylesheet" type="text/css" href="whats.css">
+        <script type="text/javascript" src="whatson.js"></script>
+    </head>
+    <body style="background-color: darkblue;">
+        
+        <header>
+
+            <div class="title">
+                <p>The Drive-In Cinema</p>
+            </div>  
+
+
+            <div class="button">
+                <ul>
+                    <li><a href="final.html">HOME</a></li>
+                    <li><a href="soon.html">Soon</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="Address.html">Location</a></li>    
+                    <li><a href="register.html">Register/Log-In</a></li>
+                </ul>        
+            </div>  
+        </header>
+        
+        <div class="admin" id="adminn">
+            <label>Movie ID (write with the same format next to each movie): </label>
+            <input type="text" id="movie-id" placeholder="ex.sunday1,sunday2,etc..">
+
+            <label>Movie Image Path:</label>
+            <input type="text"  id="movie-img" placeholder="example.jpg">
+
+            <label>Movie Name:</label>
+            <input type="text" id="movie-name" placeholder="ex. Mulan">
+            <br/>
+            <label>Director's Name:</label>
+            <input type="text" id="dir-name" placeholder="ex. Niki Caro">
+
+            <label>Actors Names:</label>
+            <input type="text" id="actor-name" placeholder="ex. Yifei Liu">
+
+            <label>Movie Description:</label>
+            <input type="text" id="description" placeholder="Description for the movie">
+
+            <label>Trailer's URL:</label>
+            <input type="text" id="movie-url" placeholder="ex. https://youtu.be/KK8FHdFluOQ">
+
+            <input type="submit" onclick="change();" value="Change">
+        </div>
+        <div id="admin-button">
+            <input type="button" value="Admin" onclick="showAdmin()">
+        </div>
+        <div id="admin-validation">
+            <input type="text" placeholder="Admin Username" id="admin-un">     <input type="password" placeholder="Admin Password" id="admin-pass">
+            <input type="button" value="Login" onclick="adminLogin()">
+        </div>
+        <fieldset>
+            <legend>Sunday</legend>
+            <img src="mulan.jpg" id="sunday1-img">
+            <div class="content">
+                <b><p class="titles">Movie Name: </p></b>
+                    <p class="names" id="sunday1-name">Mulan</p>
+                </div>
+                <br>
+            <div class="content">
+            <b><p class="titles">Director:</p></b>
+                <p class="names" id="sunday1-dirname">Niki Caro</p>
+            </div>
+            <br>
+            <div class="content">
+                <b><p class="titles">Actors:</p></b>
+                    <p class="names" id="sunday1-actname">
+                        Yifei Liu, Jet Li, Li Gong, Donnie Yen.
+                    </p>                  
+            </div>
+            <br>
+            <div class="content">
+                <b><p class="titles">Description</p></b>
+                    <p class="names" id="sunday1-desc">
+                        The story of a young Chinese girl who disguises herself as a male warrior in order to save her father. A journey that sends her into several challenges and threats, urging her to save not only her father but also the honor of her nation.
+                    </p>                  
+            </div>
+<br>
+            <ul class="movies">
+                <li><a href="book.html" class="m">Book Now</a></li>
+                <li><a href="https://youtu.be/KK8FHdFluOQ" class="m" id="sunday1-trailer">See Trailer</a></li>
+                
+            </ul>
+            <br><br><br>
+            <hr><br>
+            <img src="tenet.jpg" id="sunday2-img">
+            <div class="content">
+                <b><p class="titles">Movie Name: </p></b>
+                    <p class="names" id="sunday2-name">Tenet</p>
+                </div>
+                <br>
+            <div class="content">
+                <b><p class="titles">Director:</p></b>
+                    <p class="names" id="sunday2-dirname">Christopher Nolan</p>
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Actors:</p></b>
+                        <p class="names" id="sunday2-actname">
+                        John David Washington, Robert Pattinson, Elizabeth Debicki, Aaron Taylor-Johnson
+                        </p>                  
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Description</p></b>
+                        <p class="names" id="sunday2-dirname">
+                            The events take place in an epic within the realm of espionage, time travel and the evolution of the human race, as an operative of the organization known as Tenet is tasked with stopping World War III.
+                        </p>                  
+                </div>
+                <br>
+                <ul class="movies">
+                    <li><a href="book.html" class="m">Book Now</a></li>
+                    <li><a href="https://youtu.be/L3pk_TBkihU" class="m" sunday2-trailer>See Trailer</a></li>
+                    
+                </ul>
+                <br><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Monday</legend>
+            <img src="thenewmutants.jpg" id="monday1-img">
+            <div class="content">
+                <b><p class="titles">Movie Name: </p></b>
+                    <p class="names" id="monday1-name">The new mutants</p>
+                </div>
+                <br>
+            <div class="content">
+            <b><p class="titles">Director:</p></b>
+                <p class="names" id="monday1-dirname">Josh Boone</p>
+            </div>
+            <br>
+            <div class="content">
+                <b><p class="titles">Actors:</p></b>
+                    <p class="names" id="monday1-actname">                     
+                        Alice Braga, Maisie Williams, Charlie Heaton, Anya Taylor-Joy
+                    </p>                  
+            </div>
+            <br>
+            <div class="content">
+                <b><p class="titles">Description</p></b>
+                    <p class="names" id="monday1-desc">
+                        Five young mutants, who make up the first graduating class of Charles Xavier’s school, are fighting to save themselves and forget their sins.
+                    </p>                  
+            </div>
+<br>
+            <ul class="movies">
+                <li><a href="book.html" class="m">Book Now</a></li>
+                <li><a href="https://youtu.be/W_vJhUAOFpI" class="m" id="monday1-trailer">See Trailer</a></li>
+                
+            </ul>
+            <br><br><br><br>
+            <hr><br>
+            <img src="freaks.jpg" id="monday2-img">
+            <div class="content">
+                <b><p class="titles">Movie Name: </p></b>
+                    <p class="names" id="monday2-name">Freaks</p>
+                </div>
+                <br>
+            <div class="content">
+                <b><p class="titles">Director:</p></b>
+                    <p class="names" id="monday2-dirname">Zach Lipovsky</p>
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Actors:</p></b>
+                        <p class="names" id="monday2-actname">
+                            Grace Park, Emile Hirsch, Amanda Crew, Bruce Dern.
+                        </p>                  
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Description</p></b>
+                        <p class="names" id="monday2-desc">
+                            After being confined to living in an abandoned house with her father for fear of being killed, seven-year-old Chloe comes outside only to discover that she possess abnormal power, which puts her life in danger.
+                        </p>                  
+                </div>
+                <br>
+                <ul class="movies">
+                    <li><a href="book.html" class="m">Book Now</a></li>
+                    <li><a href="https://youtu.be/I84YEXdN61k" class="m" id="monday2-trailer">See Trailer</a></li>
+                    
+                </ul>
+                <br><br><br>
+        </fieldset>
+         <fieldset>
+            <legend>Tuesday(Kids Day)</legend>          
+            <img src="dreambuilders.jpg" id="tuesday1-img">
+            <div class="content">
+                <b><p class="titles">Movie Name: </p></b>
+                    <p class="names" id="tuesday2-name">Dream Builders</p>
+                </div>
+                <br>
+            <div class="content">
+                <b><p class="titles">Director:</p></b>
+                    <p class="names" id="tuesday2-dirname">Kim Hagen Jensen</p>
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Actors:</p></b>
+                        <p class="names" id="tuesday1-actname">                        
+                            Emilie Kroyer Koppel, Rasmus Botoft, Martin Buch
+                        </p>                  
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Description</p></b>
+                        <p class="names" id="tuesday1-desc">
+                            Minna, who discovers her ability to control the dream world, and when she misuses her abilities, she embarks on an adventure in order to learn a lesson she will never forget.
+                        </p>                  
+                </div>
+                <br>
+                <ul class="movies">
+                    <li><a href="book.html" class="m">Book Now</a></li>
+                    <li><a href=https://youtu.be/HvsGKwzTIWY class="m" id="tuesday2-trailer">See Trailer</a></li>
+                    
+                </ul>
+                <br><br><br>
+                <hr><br>
+                <img src="mulan.jpg" id="tuesday2-img">
+                <div class="content">
+                    <b><p class="titles">Movie Name: </p></b>
+                        <p class="names" id="tuesday2-name">Mulan</p>
+                    </div>
+                    <br>
+                <div class="content">
+                <b><p class="titles">Director:</p></b>
+                    <p class="names" id="tuesday2-dirname">Niki Caro</p>
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Actors:</p></b>
+                        <p class="names" id="tuesday2-actname">
+                            Yifei Liu, Jet Li, Li Gong, Donnie Yen.
+                        </p>                  
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Description</p></b>
+                        <p class="names" id="tuesday2-desc">
+                            The story of a young Chinese girl who disguises herself as a male warrior in order to save her father. A journey that sends her into several challenges and threats, urging her to save not only her father but also the honor of her nation.
+                        </p>                  
+                </div>
+                <ul class="movies">
+                    <li><a href="book.html" class="m">Book Now</a></li>
+                    <li><a href="https://youtu.be/KK8FHdFluOQ" class="m" id="tuesday2-trailer">See Trailer</a></li>
+                    
+                </ul>
+                <br><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Wednesday</legend>
+            <img src="followme.jpg" id="wednesday-img">
+            <div class="content">
+                <b><p class="titles">Movie Name: </p></b>
+                    <p class="names" id="wednesday-name">Follow me</p>
+            </div>
+            <br>
+            <div class="content">
+            <b><p class="titles">Director:</p></b>
+                <p class="names" id="wednesday-dirname">Will Wernick</p>
+            </div>
+            <br>
+            <div class="content">
+                <b><p class="titles">Actors:</p></b>
+                    <p class="names" id="wedesday-actname">                                            
+                        Holland Roden, Denzel Whitaker, Keegan Allen, Kimberly Quinn
+                    </p>                  
+            </div>
+            <br>
+            <div class="content">
+                <b><p class="titles">Description</p></b>
+                    <p class="names" id="wednesday-desc">
+                        A social media influencer gets more than he bargained for after he travels with his friends to Moscow in search of exciting online content, as they find themselves trapped in a terrifying world.
+                    </p>                  
+            </div>
+<br>
+            <ul class="movies">
+                <li><a href="book.html" class="m">Book Now</a></li>
+                <li><a href="https://youtu.be/tiBE56vQ0Fg" class="m" id="wednesday-trailer">See Trailer</a></li>
+                
+            </ul>
+            <br>
+            </fieldset>
+            <fieldset>
+                <legend>Thursday</legend>
+                <img src="tenet.jpg" id="thursday-img">
+                <div class="content">
+                    <b><p class="titles">Movie Name: </p></b>
+                        <p class="names" id="thursday-name">Tenet</p>
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Director:</p></b>
+                    <p class="names" id="thursday-dirname">Christopher Nolan</p>
+                 </div>
+                 <br>
+                <div class="content">
+                    <b><p class="titles">Actors:</p></b>
+                       <p class="names" id="thursday-actname">
+                           John David Washington, Robert Pattinson, Elizabeth Debicki, Aaron Taylor-Johnson
+                         </p>                  
+                </div>
+                 <br>
+                 <div class="content">
+                 <b><p class="titles">Description</p></b>
+                 <p class="names" id="thursday-desc">
+                     The events take place in an epic within the realm of espionage, time travel and the evolution of the human race, as an operative of the organization known as Tenet is tasked with stopping World War III.
+                 </p>                  
+                 </div>
+                 <br>
+                 <ul class="movies">
+                    <li><a href="book.html" class="m">Book Now</a></li>
+                    <li><a href="https://youtu.be/L3pk_TBkihU" class="m" id="thursday-trailer">See Trailer</a></li>
+                    
+                 </ul>
+                
+                <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Friday</legend>
+                    <img src="thenewmutants.jpg" id="friday-img">
+                    <div class="content">
+                        <b><p class="titles">Movie Name: </p></b>
+                            <p class="names" id="friday-name">The new mutants</p>
+                        </div>
+                        <br>
+                    <div class="content">
+                    <b><p class="titles">Director:</p></b>
+                        <p class="names" id="friday-dirname">Josh Boone</p>
+                    </div>
+                    <br>
+                    <div class="content">
+                        <b><p class="titles">Actors:</p></b>
+                            <p class="names" id="friday-actname">                     
+                                Alice Braga, Maisie Williams, Charlie Heaton, Anya Taylor-Joy
+                            </p>                  
+                    </div>
+                    <br>
+                    <div class="content">
+                        <b><p class="titles">Description</p></b>
+                            <p class="names" id="friday-desc">
+                                Five young mutants, who make up the first graduating class of Charles Xavier’s school, are fighting to save themselves and forget their sins.
+                            </p>                  
+                    </div>
+                    <br>
+                    <ul class="movies">
+                        <li><a href="book.html" class="m">Book Now</a></li>
+                        <li><a href="https://youtu.be/W_vJhUAOFpI" class="m" id="friday-trailer">See Trailer</a></li>
+                        
+                    </ul>
+                    
+                    <br>
+             </fieldset>
+        <fieldset>
+            <legend>Saturday</legend>          
+            <img src="freaks.jpg" id="saturday1-img">
+            <div class="content">
+                <b><p class="titles">Movie Name: </p></b>
+                    <p class="names" id="saturday1-name">Freaks</p>
+                </div>
+                <br>
+            <div class="content">
+                <b><p class="titles">Director:</p></b>
+                    <p class="names" id="saturday1-dirname">Zach Lipovsky</p>
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Actors:</p></b>
+                        <p class="names" id="saturday1-actname">
+                            Grace Park, Emile Hirsch, Amanda Crew, Bruce Dern.
+                        </p>                  
+                </div>
+                <br>
+                <div class="content">
+                    <b><p class="titles">Description</p></b>
+                        <p class="names" id="saturday1-desc">
+                            After being confined to living in an abandoned house with her father for fear of being killed, seven-year-old Chloe comes outside only to discover that she possess abnormal power, which puts her life in danger.
+                        </p>                  
+                </div>
+                <br>
+        <ul class="movies">
+            <li><a href="book.html" class="m">Book Now</a></li>
+            <li><a href="https://youtu.be/I84YEXdN61k" class="m" id="saturday1-trailer">See Trailer</a></li>
+            
+         </ul>
+            <br><br><br>
+             <hr><br>
+         <img src="followme.jpg" id="saturday2-img">
+         <div class="content">
+             <b><p class="titles" >Movie Name: </p></b>
+             <p class="names" id="saturday2-name">Follow me</p>
+         </div>
+         <br>
+         <div class="content">
+           <b><p class="titles">Director:</p></b>
+          <p class="names" id="saturday2-dirname">Will Wernick</p>
+         </div>
+         <br>
+                <div class="content">
+                <b><p class="titles">Actors:</p></b>
+                  <p class="names" id="saturday2-actname">                                            
+                          Holland Roden, Denzel Whitaker, Keegan Allen, Kimberly Quinn
+                 </p>                  
+                 </div>
+                  <br>
+              <div class="content">
+                   <b><p class="titles">Description</p></b>
+                      <p class="names" id="saturday2-desc">
+                          A social media influencer gets more than he bargained for after he travels with his friends to Moscow in search of exciting online content, as they find themselves trapped in a terrifying world.
+                      </p>                  
+               </div>
+               <br>
+                  <ul class="movies">
+                       <li><a href="book.html" class="m">Book Now</a></li>
+                       <li><a href="https://youtu.be/tiBE56vQ0Fg" class="m" id="saturday2-trailer">See Trailer</a></li>
+                       
+                 </ul>
+                   <br>
+                </fieldset>
+    </body>
+</html>

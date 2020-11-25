@@ -1,0 +1,43 @@
+body{
+    background:url("image5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    font-size: xx-large;
+    text-align: center;
+    color:#572889;
+}
+.list{
+    text-align: center;
+    
+}
+a {
+    text-decoration: none;
+    font-size: 30px;
+    background-color:  #572889;
+    border-radius: 80px;
+    top:80%;
+    padding:30px;
+    color:white;
+}
+
+a:hover {
+    background-color: purple;
+}
+
+a.link1:active {
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+

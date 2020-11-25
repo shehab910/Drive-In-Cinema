@@ -1,0 +1,133 @@
+body
+{
+    margin: 0%;
+    font-family: cursive;
+    background-image: url("b11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    margin-top: -35px;
+}
+header div
+{
+    display: inline-block;
+}
+.admin
+{
+    display: none;
+    color: #DE2B57;
+}
+.admin label{
+    margin-left: 25px;
+}
+#admin-button input
+{
+    display: inline;
+    margin-right: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: large;
+    color: aliceblue;
+}
+#admin-button input:hover
+{
+    background-color: #DE2B57;
+    cursor: pointer;
+}
+#admin-validation
+{
+    display: none;
+    margin-left: 35px;
+}
+.title
+{
+    font-size: 50px;
+    margin-left: 10px;
+    padding: 2px;
+    margin-right: 14%; 
+    font-family: fantasy; 
+    font-weight: 700;
+}
+.title p
+{
+    padding: 20px;
+    background-color: white;  
+    border: 5px solid #DE2B57;
+    border-style: dotted;
+    color: #DE2B57;
+}
+ul ,li{
+    display: inline;
+    border-radius: 10px;
+    font-size: 40px;
+}
+li{
+    font-size: 20px;
+    padding-right: 10px;
+}
+ul{
+    text-align: center;
+}
+.button{
+    text-align: right;
+    padding-right: 10%;
+}
+header a{
+    text-decoration: none;
+
+    padding: 10px;
+    border-right: 3px solid black;
+    background-color:#DE2B57 ;
+    color: white;
+    border-radius: 50px;
+}
+header a:hover{
+    background-color: purple;
+}
+
+.titles{
+    color: crimson;
+    font-size: x-large;
+}
+fieldset{
+    margin: 1%;
+}
+legend{
+    color:white;
+    font-size: xx-large;
+}
+
+div.content p{
+    display: inline;
+}
+.names{
+    color:white;
+    font-size: x-large;
+}
+img{
+    float:left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:200px;
+    height:250px;
+    display: block;
+}
+ul.movies{
+    display: inline;
+    text-align: center;
+    padding-left: 300px;
+}
+li a.m{
+    text-decoration: none;
+
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+li a.m:hover{
+    background-color: cyan;
+}
