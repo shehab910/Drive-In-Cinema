@@ -3,7 +3,14 @@
     var emailb = true;
     var passb = true;
     var pass2b = true;
-    var currAccountIndex = -1;
+    var currAccountIndex = 1;
+    let accountt ={
+        username: "blez",
+            email: "blezagain",
+            password: "a",
+            password2: "a"
+    }
+    accounts.push(accountt)
     function save()
     {
         let account ={
@@ -166,7 +173,7 @@ function login()
             isFound = true;
             alert("logged in");
             console.log(loginEmail + "      ");
-            window.location.href="final.html";
+            window.location.href = "Homepage.html";
             break;
         }
     }
