@@ -173,7 +173,7 @@ function login()
             isFound = true;
             alert("logged in");
             console.log(loginEmail + "      ");
-            window.location.href = "Homepage.html";
+            window.location.href = "home.html";
             break;
         }
     }
